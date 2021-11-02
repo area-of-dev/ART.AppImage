@@ -16,7 +16,7 @@ all: clean
 	apprepo --destination=$(PWD)/build appdir boilerplate libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libreadline8 \
 										libselinux1 libtinfo6 libncurses6 libtinfo5 libssh-4 libgcrypt20 libsystemd0
 
-	wget --output-document="$(PWD)/build/build.tar.xz" https://bitbucket.org/agriggio/art/downloads/ART-1.9.3-linux64.tar.xz
+	wget --output-document="$(PWD)/build/build.tar.xz" https://bitbucket.org/agriggio/art/downloads/ART-1.10.1-linux64.tar.xz
 	tar -xf $(PWD)/build/build.tar.xz -C $(PWD)/build
 
 	echo "LD_LIBRARY_PATH=\$${LD_LIBRARY_PATH}:\$${APPDIR}/art" >> $(PWD)/build/Boilerplate.AppDir/AppRun
