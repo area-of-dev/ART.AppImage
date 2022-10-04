@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 PWD:=$(shell pwd)
 
-all: init clean
+all: clean init
 	mkdir --parents $(PWD)/build/Boilerplate.AppDir/art
 	$(PWD)/bin/Apprepo.AppImage --destination=$(PWD)/build appdir boilerplate libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libreadline8 \
 										libselinux1 libtinfo6 libncurses6 libtinfo5 libssh-4 libgcrypt20 libsystemd0 libwayland-cursor0 libselinux1 
