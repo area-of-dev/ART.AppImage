@@ -20,4 +20,4 @@ RUN apt-get upgrade -y
 
 RUN apt-get install -y kmod make gcc wget
 RUN apt-get install -y rpm2cpio cpio fuse file
-RUN apt-get xz-utils
+RUN apt-get install -y xz-utils
